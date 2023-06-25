@@ -32,7 +32,5 @@ function  convert(cur1,cur2,inputVal){
     .then((data) => {
         document.getElementById('result').value = Object.values(data.rates)[0]
   });
-
-
 }
 
