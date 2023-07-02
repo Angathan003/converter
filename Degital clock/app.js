@@ -27,7 +27,7 @@ function display(){
         month: 'long',
         day: 'numeric',
         weekday: 'long',
-        timeZoneName: 'short'
+        // timeZoneName: 'short'
       };
       
       fetch('https://ipapi.co/json/')
