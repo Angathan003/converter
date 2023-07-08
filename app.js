@@ -22,7 +22,8 @@ btn.addEventListener('click', () => {
   if (cur1 === cur2) {
     alert('Please select different currencies.');
   } else {
-    convert(cur1, cur2, inputVal);
+    let result = convert(cur1, cur2, inputVal);
+    displayResult(result);
   }
 });
 
@@ -33,4 +34,8 @@ function convert(cur1, cur2, inputVal) {
     .then(data => {
       document.getElementById('result').value = Object.values(data.rates)[0];
     });
+}
+
+function displayResult(result) {
+  console.log('Converted amount:', result);
 }
